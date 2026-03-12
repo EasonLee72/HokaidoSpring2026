@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>北海道春之旅 2026 | 10 天精彩行程</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="sakura-bg" id="sakuraBg"></div>
+  
+  <div class="cover-page">
+    <h1 class="cover-title">北海道春之旅</h1>
+    <p class="cover-subtitle">🌸 2026 春季 10 天精彩行程 🌸</p>
+    <p class="cover-date">📅 2026 年 3 月 - 4 月</p>
+    
+    <div class="cover-image" style="background: linear-gradient(135deg, #ffb7c5, #ffe4e8); height: 300px; display: flex; align-items: center; justify-content: center; font-size: 5rem;">
+      🗻🌸🍜
+    </div>
+    
+    <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem; max-width: 600px;">
+      探索北海道的絕美風光<br>
+      品嚐新鮮海鮮美食<br>
+      體驗溫泉與自然奇觀
+    </p>
+    
+    <a href="directory.html" class="enter-btn">開始旅程 ✨</a>
+    
+    <div style="margin-top: 3rem; display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+      <div style="text-align: center;">
+        <div style="font-size: 2rem;">📍</div>
+        <div>10 天行程</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 2rem;">🏨</div>
+        <div>精選住宿</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 2rem;">🍱</div>
+        <div>美食推薦</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-size: 2rem;">🚗</div>
+        <div>自駕旅遊</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 櫻花動畫
+    function createSakura() {
+      const container = document.getElementById('sakuraBg');
+      const petalCount = 30;
+      
+      for (let i = 0; i < petalCount; i++) {
+        const petal = document.createElement('div');
+        petal.className = 'sakura-petal';
+        petal.style.left = Math.random() * 100 + 'vw';
+        petal.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        petal.style.animationDelay = (Math.random() * 10) + 's';
+        container.appendChild(petal);
+      }
+    }
+    
+    createSakura();
+  </script>
+</body>
+</html>
